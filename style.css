@@ -1,0 +1,172 @@
+:root {
+  --primary_cyan: hsl(179, 62%, 43%);
+  --primary_yellow: hsl(71, 73%, 54%);
+
+  --neutral_gray: hsl(204, 43%, 93%);
+  --neutral_blue: hsl(218, 22%, 67%);
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background-color: #e6eff5;
+  font-family: 'Karla', sans-serif;
+  font-size: 16px;
+}
+
+main {
+  display: grid;
+  grid-template-columns: 100%;
+  grid-template-rows: 36% 32% 32%;
+  position: absolute;
+  width: 311px;
+  height: 722px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  margin: -361px 0 0 -155px;
+}
+
+.intro {
+  background-color: #ffffff;
+  grid-row-start: 1;
+  padding: 28px 24px 24px 24px;
+  border-top-left-radius: 5px;
+  border-top-right-radius: 5px;
+}
+
+.subscribtion {
+  grid-row-start: 2;
+  background-color: #2ab3b1;
+  padding: 24px;
+}
+
+.why_us {
+  grid-row-start: 3;
+  background-color: #2ab3b1;
+  padding: 24px;
+  opacity: 85%;
+  border-bottom-left-radius: 5px;
+  border-bottom-right-radius: 5px;
+}
+
+h2 {
+  color: white;
+  font-size: 18px;
+  font-weight: bold;
+  letter-spacing: -0.22px;
+  margin-bottom: 18px;
+}
+
+ul {
+  font-size: 14px;
+  line-height: 20;
+  letter-spacing: -0.17px;
+  color: white;
+  line-height: 20px;
+  list-style-type: none;
+  opacity: 75%;
+}
+
+.offer {
+  font-weight: bold;
+  font-size: 15px;
+  line-height: 20px;
+  letter-spacing: -0.19px;
+  color: #c0df33;
+  margin-bottom: 16px;
+}
+
+.subscribtion p {
+  color: white;
+  font-size: 16px;
+}
+
+p {
+  color: #9aa7be;
+  font-size: 14px;
+  line-height: 26px;
+  letter-spacing: -0.17px;
+}
+
+h1 {
+  color: #2ab3b1;
+  font-weight: bold;
+  font-size: 20px;
+  letter-spacing: -0.25px;
+  margin-bottom: 24px;
+}
+
+.dollar {
+  font-size: 32px;
+  font-weight: bold;
+  letter-spacing: -0.4px;
+}
+
+.permonth {
+  opacity: 50%;
+  margin-left: 11px;
+}
+
+.price {
+  display: flex;
+  align-items: center;
+  margin-bottom: 4px;
+  line-height: 37px;
+}
+
+.sign-btn {
+  background-color: #c0df33;
+  border: none;
+  padding: 15px 102px;
+  margin-top: 26px;
+  border-radius: 5px;
+  color: white;
+  font-size: 16px;
+  letter-spacing: -0.2px;
+  box-shadow: 2px 2px 10px gray;
+}
+
+@media only screen and (min-width: 650px) {
+  main {
+    display: grid;
+    grid-template-columns: 50% 50%;
+    grid-template-rows: 47% 53%;
+    width: 635px;
+    height: 475px;
+    margin: -237px 0 0 -317px;
+    box-shadow: 2px 2px 20px rgb(235, 228, 228);
+  }
+  .intro {
+    grid-row-start: 1;
+    grid-column-start: 1;
+    grid-column-end: 3;
+    padding: 40px;
+  }
+  .subscribtion {
+    grid-row-start: 2;
+    grid-column-start: 1;
+    border-bottom-left-radius: 5px;
+    padding: 40px;
+  }
+  .why_us {
+    grid-row-start: 2;
+    grid-column-start: 2;
+    border-bottom-left-radius: 0;
+    border-bottom-right-radius: 5px;
+    padding: 40px;
+  }
+  .sign-btn {
+    padding: 15px 85px;
+  }
+  h1 {
+    font-size: 24px;
+  }
+  .offer {
+    font-size: 18px;
+  }
+}
